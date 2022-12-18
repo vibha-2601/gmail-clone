@@ -14,6 +14,7 @@ import LocalOfferIcon from '@mui/icons-material/LocalOffer';
 
 
 import Section from './Section';
+import EmailRow from './EmailRow';
 
 
 
@@ -57,9 +58,23 @@ const EmailList = () => {
          <Section Icon={PeopleIcon} title='Social' color='#1A73E8' />
          
          <Section Icon={LocalOfferIcon} title='Promotions' color='green'  />
-
-        </div>
+         </div>
       
+       <div className='emailList__list'>
+        <EmailRow 
+        title='Twitch'
+        subject='Hey fellow streamer'
+        description='This is a test'
+        time='10pm'
+        />
+
+        <EmailRow 
+        title='Twitch'
+        subject='Hey fellow streamer'
+        description='This is a test'
+        time='10pm'
+        />
+       </div>
     </div>
   )
 }
