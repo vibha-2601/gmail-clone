@@ -5,8 +5,9 @@ import Sidebar from './Sidebar';
 
 // import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-import { Mail } from '@mui/icons-material';
 import EmailList from './EmailList';
+import Mail from './Mail';
+import SendMail from './SendMail';
 
 
 
@@ -24,6 +25,8 @@ function App() {
         <Route path='/' element={<EmailList />} />
       </Routes>
        </div>
+
+       <SendMail />
       </div>
     </Router>
   );

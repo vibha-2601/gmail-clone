@@ -34,7 +34,6 @@ const Header = () => {
      </IconButton>
      <Avatar />
       </div>
-
     </div>
   )
 }

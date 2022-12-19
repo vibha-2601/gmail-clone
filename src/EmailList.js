@@ -11,16 +11,12 @@ import SettingsIcon from '@mui/icons-material/Settings';
 import InboxIcon from '@mui/icons-material/Inbox';
 import PeopleIcon from '@mui/icons-material/People';
 import LocalOfferIcon from '@mui/icons-material/LocalOffer';
-
-
 import Section from './Section';
 import EmailRow from './EmailRow';
 
-
-
-
 const EmailList = () => {
-  return (
+
+return (
     <div className='emailList'>
         <div className='emailList__settings'>
             <div className='emailList__settingsLeft'>
