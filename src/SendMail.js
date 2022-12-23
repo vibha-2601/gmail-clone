@@ -31,7 +31,7 @@ return (
         <input
           name="to"
           placeholder="To"
-          type="text"
+          type="email"
           {...register("to", { required: true })}
         />
        
