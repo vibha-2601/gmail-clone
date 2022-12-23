@@ -3,12 +3,16 @@ import "./SendMail.css";
 import CloseIcon from "@mui/icons-material/Close";
 import { Button } from "@mui/material";
 import { useForm } from "react-hook-form";
-import { ErrorSharp } from "@mui/icons-material";
+import { useDispatch } from "react-redux";
+import { closeSendMessage } from "./features/mailSlice";
+
 
 const SendMail = () => {
   const { register, handleSubmit } = useForm({
     shouldUseNativeValidation: true,
   });
+
+  const dispatch = useDispatch()
 
   const onSubmit = async (data) => {
     console.log(data);
@@ -18,7 +22,9 @@ return (
     <div className="sendMail">
       <div className="sendMail__header">
         <h3>New Message</h3>
-        <CloseIcon className="sendMail__close" />
+        <CloseIcon className="sendMail__close" 
+        onClick = {() => dispatch(closeSendMessage())}
+        />
       </div>
 
       <form onSubmit={handleSubmit(onSubmit)}>
